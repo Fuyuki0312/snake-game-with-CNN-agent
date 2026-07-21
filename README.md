@@ -1,7 +1,7 @@
 # (In process)
 
 
-## What to do after finishing build the agent
+## What to do after finishing building the agent
 
 Analyze:
 1. How agent observing game's frames differs from agent receiving vector state.
