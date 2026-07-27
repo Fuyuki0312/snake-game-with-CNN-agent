@@ -1,4 +1,4 @@
-# PLaying Snake Game with Deep Reinforcement Learning
+# Playing Snake Game with Deep Reinforcement Learning
 
 
 ## Abstract
