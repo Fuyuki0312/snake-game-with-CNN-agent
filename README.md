@@ -2,7 +2,7 @@
 
 ![gameplay](asset/gameplay_screenshot.jpg)
 <p align="center">
-  <img src="assets/gameplay.png" alt="Snake agent gameplay" width="650">
+  <img src="assets/gameplay_screenshot.jpg" alt="Snake agent gameplay" width="650">
 </p>
 
 ## Abstract
