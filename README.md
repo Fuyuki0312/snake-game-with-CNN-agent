@@ -13,6 +13,11 @@ A convolutional neural network (CNN) model processes this visual state and estim
 The best observed training score so far is 33, which shows that the agent can learn meaningful visual control.
 
 
+## Details
+
+(In process)
+
+
 ## References
 
 V. Mnih, K. Kavukcuoglu, D. Silver, A. Graves, I. Antonoglou, D. Wierstra, and M. Riedmiller, “Playing atari with deep reinforcement learning,” arXiv preprint arXiv:1312.5602, 2013. 
