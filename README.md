@@ -13,14 +13,6 @@ A convolutional neural network (CNN) model processes this visual state and estim
 The best observed training score so far is 33, which shows that the agent can learn meaningful visual control.
 
 
-## What to do after finishing building the agent
-
-Analyze:
-1. How agent observing game's frames differs from agent receiving vector state.  
-2. Why DQN or Double-DQN.  
-3. How different reward calculating methods affects the agent's performance.  
-
-
 ## References
 
 V. Mnih, K. Kavukcuoglu, D. Silver, A. Graves, I. Antonoglou, D. Wierstra, and M. Riedmiller, “Playing atari with deep reinforcement learning,” arXiv preprint arXiv:1312.5602, 2013. 
