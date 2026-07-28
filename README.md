@@ -1,6 +1,9 @@
 # Playing Snake Game with Deep Reinforcement Learning
 
-![description](asset/gameplay_screenshot.jpg)
+![gameplay](asset/gameplay_screenshot.jpg)
+<p align="center">
+  <img src="assets/gameplay.png" alt="Snake agent gameplay" width="650">
+</p>
 
 ## Abstract
 
