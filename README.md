@@ -1,5 +1,6 @@
 # Playing Snake Game with Deep Reinforcement Learning
 
+![description](asset/gameplay_screenshot.jpg)
 
 ## Abstract
 
