@@ -17,6 +17,31 @@ The best observed training score so far is 33, which shows that the agent can le
 
 (In process)
 
+### Reward
+
+## Reward Design
+
+The reward function combines **distance-based guidance**, **progressive food rewards**, and **score-scaled death penalties**.
+
+| Event                      |                Reward | Purpose                                                                                                                                                                                                                                                                                                      |
+| -------------------------- | --------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Move closer to the food    |                `+0.1` | Provides a small directional signal that encourages the snake to approach the food.                                                                                                                                                                                                                          |
+| Move farther from the food |                `-0.1` | Discourages movements that increase the distance between the snake and the food.                                                                                                                                                                                                                             |
+| Eat food                   |  `10 + current_score` | Rewards successful food collection while giving greater value to collecting multiple food items within the same episode. As the snake grows longer and becomes harder to control, the increasing reward encourages the agent to continue pursuing food instead of avoiding the additional collision risk.    |
+| Die                        | `-10 - current_score` | Makes death increasingly costly as the agent achieves a higher score. Without this scaling, a fixed death penalty could become relatively insignificant compared with the accumulated food rewards, potentially encouraging reckless strategies that collect food quickly but end in an avoidable collision. |
+
+In formula form:
+
+```text
+Reward =
+    +0.1                  if the snake moves closer to the food
+    -0.1                  if the snake moves farther from the food
+    10 + current_score    if the snake eats the food
+   -10 - current_score    if the snake dies
+```
+
+This design aims to balance **short-term navigation guidance** with **long-term survival and food collection**.
+
 
 ## References
 
