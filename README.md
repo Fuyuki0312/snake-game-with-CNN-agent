@@ -17,9 +17,7 @@ The best observed training score so far is 33, which shows that the agent can le
 
 (In process)
 
-### Reward
-
-## Reward Design
+### Reward Design
 
 The reward function combines **distance-based guidance**, **progressive food rewards**, and **score-scaled death penalties**.
 
@@ -41,6 +39,9 @@ Reward =
 ```
 
 This design aims to balance **short-term navigation guidance** with **long-term survival and food collection**.
+
+
+### Model Architecture
 
 
 ## References
