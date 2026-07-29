@@ -24,11 +24,10 @@ The Snake game runs in a **750 × 750-pixel window** divided into a **15 × 15 g
 * Each time the snake eats food, its body grows by one cell.
 * The snake's head is represented by a triangle, providing the model with additional visual information about its current movement direction.
 * The game ends when the snake collides with the screen boundary or with its own body.
-* 
 
-## Details
 
-(In process)
+## Approach
+
 
 ### Reward Design
 
