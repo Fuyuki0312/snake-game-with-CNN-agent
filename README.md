@@ -44,7 +44,7 @@ This design aims to balance **short-term navigation guidance** with **long-term 
 ### Model Architecture
 
 <p align="center">
-  <img src="assets/dqn_architecture.png" alt="DQN architecture" width="350">
+  <img src="assets/dqn_architecture.png" alt="DQN architecture" width="500">
 </p>
 
 
