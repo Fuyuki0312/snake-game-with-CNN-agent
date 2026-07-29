@@ -29,6 +29,15 @@ The Snake game runs in a **750 × 750-pixel window** divided into a **15 × 15 g
 ## Approach
 
 
+### Model Architecture
+
+<p align="center">
+  <img src="assets/dqn_architecture.png" alt="DQN architecture" width="1000">
+</p>
+
+<p align="center"> Figure 2: Overall Deep Q-Learning Network achitecture, where screen shots from snake game is resized to 75 x 75 RGB </p>
+
+
 ### Reward Design
 
 The reward function combines **distance-based guidance**, **progressive food rewards**, and **score-scaled death penalties**.
@@ -53,13 +62,9 @@ Reward =
 This design aims to balance **short-term navigation guidance** with **long-term survival and food collection**.
 
 
-### Model Architecture
+## Result
 
-<p align="center">
-  <img src="assets/dqn_architecture.png" alt="DQN architecture" width="1000">
-</p>
-
-<p align="center"> Figure 2: Overall Deep Q-Learning Network achitecture, where screen shots from snake game is resized to 75 x 75 RGB </p>
+(in process)
 
 
 ## References
