@@ -16,15 +16,27 @@ All Python files should remain in the same directory because the project imports
 
 > `agent.py`, `model.py`, `trainer.py`, and `timer.py` are supporting modules and do not need to be run directly.
 
+
 ## Installation
 
-Install the required Python packages:
+This project was developed and tested with the following package versions:
+
+| Package     | Version        |
+| ----------- | -------------- |
+| PyTorch     | `2.5.1+cu121`  |
+| Torchvision | `0.20.1+cu121` |
+| MSS         | `10.2.0`       |
+| Pillow      | `12.3.0`       |
+| NumPy       | `2.3.5`        |
+
+Install all required dependencies from the project directory:
 
 ```bash
-pip install torch torchvision mss pillow numpy
+python -m pip install -r requirements.txt
 ```
 
-Tkinter is included with most standard Python installations, including the official Windows version.
+The `+cu121` suffix indicates that PyTorch and Torchvision use builds compiled for CUDA 12.1. The included `requirements.txt` automatically adds the official PyTorch CUDA 12.1 package index.
+
 
 ## Training the Agent
 
