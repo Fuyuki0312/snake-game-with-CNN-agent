@@ -60,6 +60,8 @@ This design aims to balance **short-term navigation guidance** with **long-term 
   <img src="assets/dqn_architecture.png" alt="DQN architecture" width="1000">
 </p>
 
+<p align="center"> Figure 2: Overall Deep Q-Learning Network achitecture, where screen shots from snake game is resized to 75 x 75 RGB </p>
+
 
 ## References
 
