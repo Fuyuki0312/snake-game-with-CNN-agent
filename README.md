@@ -62,9 +62,32 @@ Reward =
 This design aims to balance **short-term navigation guidance** with **long-term survival and food collection**.
 
 
-## Result
+## Results
 
-(in process)
+During training, the agent achieved a highest score of:
+
+```text
+Highest training score: 43
+```
+
+After training, the model was evaluated over **50 games without further learning**:
+
+```text
+Highest test score: 35
+Mean test score: 16.96
+Median test score: 19.0
+```
+
+No random seed was fixed during either training or evaluation. Therefore, the results may vary between runs due to randomness in the game environment, particularly the food spawn positions.
+
+The final score is also partially influenced by how favorable or unfavorable the generated food locations are. Some food placements allow the snake to follow a relatively safe route, while others may require more complex movement and increase the risk of collision.
+
+
+## Limitations
+
+* During the early stage of a game, when the snake is still too short to collide with its own body, it may occasionally move in circles instead of approaching the food efficiently. Because the game automatically ends when the snake fails to eat food within a predefined number of actions, some episodes may finish with a very low score, such as `0` or `1`.
+
+* The agent does not always follow the shortest or safest route to the food. This behavior becomes more noticeable when the snake grows longer, as it may move in a zigzag pattern. Such movement can create an inefficient body arrangement and make future food collection more difficult due to the increased risk of self-collision.
 
 
 ## References
