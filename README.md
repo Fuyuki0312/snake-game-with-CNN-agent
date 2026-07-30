@@ -70,7 +70,7 @@ During training, the agent achieved a highest score of:
 Highest training score: 43
 ```
 
-After training, the model was evaluated over **50 games without further learning**:
+After traininga total of 2578 games, the model was evaluated over **50 games without further learning**:
 
 ```text
 Highest test score: 35
