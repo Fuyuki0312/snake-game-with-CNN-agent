@@ -62,6 +62,52 @@ Reward =
 This design aims to balance **short-term navigation guidance** with **long-term survival and food collection**.
 
 
+### Epsilon-Greedy Exploration
+
+The agent uses an **epsilon-greedy strategy** to balance exploration and exploitation.
+
+At each action:
+
+* With probability `epsilon`, the agent selects a random action for exploration.
+* With probability `1 - epsilon`, the agent selects the action predicted by the model.
+
+The initial epsilon value is:
+
+```text
+epsilon = 1.0
+```
+
+This means that the agent begins by selecting actions completely at random. After every action, epsilon is updated using the following decay rule:
+
+```text
+epsilon = epsilon × 0.9999
+```
+
+The value continues decreasing until it reaches the minimum exploration threshold:
+
+```text
+epsilon = 0.05
+```
+
+At this stage, the agent still selects a random action approximately **5% of the time**.
+
+Epsilon is set permanently to `0` only when all three conditions below are satisfied:
+
+1. The agent has completed at least `1,000` games.
+2. Epsilon has already decreased to `0.05`.
+3. The highest score achieved in a single game is at least `10`.
+
+```text
+if games_played >= 1000
+and epsilon <= 0.05
+and best_score >= 10:
+    epsilon = 0
+```
+
+Once epsilon becomes `0`, the agent stops selecting random actions and relies entirely on the trained model.
+
+
+
 ## Results
 
 During training, the agent achieved a highest score of:
