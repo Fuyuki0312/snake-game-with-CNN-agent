@@ -178,6 +178,8 @@ After training a total of 2578 games, the model was evaluated over **50 games wi
 Highest test score: 36
 Mean test score: 19.86
 Median test score: 22.0
+Full score record: [0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 3, 4, 5, 6, 9, 10, 12, 13, 14, 15, 16, 16, 18, 18, 19, 19, 19, 19, 20, 20, 21, 21, 22, 22, 23, 24, 26, 27, 28, 29, 29, 31, 31, 31, 31, 32, 33, 34, 35, 35]
+
 ```
 
 No random seed was fixed during either training or evaluation. Therefore, the results may vary between runs due to randomness in the game environment, particularly the food spawn positions.
