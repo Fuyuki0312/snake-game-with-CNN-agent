@@ -117,15 +117,3 @@ Use the arrow keys to control the snake:
 * `→` — Move right
 
 When the snake dies, the game displays the game-over screen and automatically starts a new game after the waiting time configured in `SnakeGameForAI.py`.
-
-
-
-
-## (In process)
-
-Analyze:
-1. How agent observing game's frames differs from agent receiving vector state.  
-2. Why DQN or Double-DQN.  
-3. How different reward calculating methods affects the agent's performance.  
-
-
