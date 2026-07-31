@@ -184,7 +184,7 @@ No random seed was fixed during either training or evaluation. Therefore, the re
 
 The final score is also partially influenced by how favorable or unfavorable the generated food locations are. Some food placements allow the snake to follow a relatively safe route, while others may require more complex movement and increase the risk of collision.
 
-The `CNNSnakeModel.pth` of the result above can be downloaded at (in process).
+The `CNNSnakeModel.pth` of the result above can be downloaded at [(this)](https://drive.google.com/file/d/1kPsXni5sMOQjrmFWMvTelv0HPBKUdrpx/view?usp=sharing)
 
 
 ## How to use this project
