@@ -118,6 +118,7 @@ def main():
                 break
 
             else:
+                agent.reset_frame_buffer()
                 game.reset_game()
                 state = agent.get_state()
 
