@@ -175,9 +175,9 @@ Highest training score: 43
 After training a total of 2578 games, the model was evaluated over **50 games without further learning**:
 
 ```text
-Highest test score: 35
-Mean test score: 16.96
-Median test score: 19.0
+Highest test score: 36
+Mean test score: 19.86
+Median test score: 22.0
 ```
 
 No random seed was fixed during either training or evaluation. Therefore, the results may vary between runs due to randomness in the game environment, particularly the food spawn positions.
@@ -201,4 +201,4 @@ Visit `README.md` in folder `code` for more details.
 
 ## References
 
-V. Mnih, K. Kavukcuoglu, D. Silver, A. Graves, I. Antonoglou, D. Wierstra, and M. Riedmiller, “Playing atari with deep reinforcement learning,” arXiv preprint arXiv:1312.5602, 2013. 
+V. Mnih, K. Kavukcuoglu, D. Silver, A. Graves, I. Antonoglou, D. Wierstra, and M. Riedmiller, “Playing atari with deep reinforcement learning,” arXiv preprint arXiv:1312.5602, 2013.
