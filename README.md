@@ -29,6 +29,62 @@ The Snake game runs in a **750 × 750-pixel window** divided into a **15 × 15 g
 ## Approach
 
 
+### Q-Value Update
+
+The core learning mechanism of the agent is based on the **Bellman equation**, which updates the expected value of taking an action in the current state:
+
+```text
+Q_target = reward + γ × max(Q_next) × (1 - done)
+```
+
+In this project, the target Q-value is calculated as:
+
+```python
+Q_new = reward + gamma * next_q_value * (1 - is_game_over)
+```
+
+Where:
+
+* `reward` is the immediate reward received after the agent performs the current action.
+* `gamma` is the discount factor and is set to `0.97`.
+* `next_q_value` is the highest Q-value predicted by the CNN model for the next game state.
+* `is_game_over` indicates whether the snake dies after performing the current action.
+
+When the snake is still alive:
+
+```text
+is_game_over = 0
+```
+
+Therefore:
+
+```text
+Q_new = reward + 0.97 × next_q_value
+```
+
+This allows the agent to consider both the immediate reward and the potential future rewards.
+
+When the snake dies:
+
+```text
+is_game_over = 1
+```
+
+Then:
+
+```text
+1 - is_game_over = 0
+```
+
+The future Q-value is removed from the calculation:
+
+```text
+Q_new = reward
+```
+
+This is because a terminal state has no future actions or rewards. The calculated `Q_new` value is then used as the training target for the Q-value corresponding to the action selected by the agent.  
+
+
 ### Model Architecture
 
 <p align="center">
