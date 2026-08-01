@@ -166,7 +166,7 @@ Once epsilon becomes `0`, the agent stops selecting random actions and relies en
 
 ## Results
 
-During training, the agent achieved a highest score of:
+After a single training run with no random seed set, the agent achieved a best score of:
 
 ```text
 Highest training score: 43
