@@ -172,7 +172,7 @@ During training, the agent achieved a highest score of:
 Highest training score: 43
 ```
 
-After training a total of 2578 games, the model was evaluated over **50 games without further learning**:
+After training a total of 2578 games (approximately 4 hours on RTX 4060 Laptop GPU), the model was evaluated over **50 games without further learning**:
 
 ```text
 Highest test score: 36
